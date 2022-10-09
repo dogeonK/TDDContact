@@ -21,13 +21,6 @@ class HelloWorldControllerTest {
     //모의 http request, response 만들어 테스트 진행하도록 해줌
     private MockMvc mockMvc;
 
-    //단지 메소드 호출 테스트
-    @Test
-    public void helloWorld() {
-        System.out.println(helloWorldController.helloWord());
-
-        assertThat(helloWorldController.helloWord()).isEqualTo("HelloWorld");
-    }
 
     //실제 http 테스트
     @Test
