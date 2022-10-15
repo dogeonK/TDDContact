@@ -40,4 +40,13 @@ public class PersonController {
         personService.modify(id, personDto);
     }
 
+    @PatchMapping("/{id}")
+    public void modifyPerson(@PathVariable Long id, String name) {
+        personService.modify(id, name);
+    }
+
+    @DeleteMapping("/{id}")
+    public void deletePerson(@PathVariable Long id){
+        personService.delete(id);
+    }
 }
